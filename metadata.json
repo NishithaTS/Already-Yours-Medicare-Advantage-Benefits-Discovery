@@ -1,0 +1,6 @@
+{
+  "name": "Already Yours — Medicare Advantage Benefits Discovery",
+  "description": "Discover and unlock overlooked Medicare Advantage benefits, allowances, and savings for older adults and family caregivers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

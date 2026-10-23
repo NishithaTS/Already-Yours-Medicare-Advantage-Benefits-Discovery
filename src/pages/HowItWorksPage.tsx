@@ -16,21 +16,21 @@ import {
 
 export const HowItWorksPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-[#FCFCFA] pb-20 text-left">
+    <div className="min-h-screen bg-[#F5F5F7] pb-20 text-left">
       
       {/* Header Banner */}
-      <div className="bg-gradient-to-b from-[#EAF5F7]/80 to-[#FCFCFA] py-14 px-4 sm:px-6 lg:px-8 border-b border-[#233640]/10">
+      <div className="bg-gradient-to-b from-[#F1EEFE]/80 to-[#F5F5F7] py-14 px-4 sm:px-6 lg:px-8 border-b border-[#16151D]/10">
         <div className="max-w-4xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white text-xs font-bold text-[#12566C] border border-[#176B83]/20">
-            <Sparkles className="w-3.5 h-3.5 text-[#176B83]" />
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white text-xs font-bold text-[#5243C9] border border-[#6A5AE0]/20">
+            <Sparkles className="w-3.5 h-3.5 text-[#6A5AE0]" />
             <span>Demystifying Medicare Advantage</span>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl font-bold text-[#233640] tracking-tight">
+          <h1 className="text-3xl sm:text-5xl font-bold text-[#16151D] tracking-tight">
             How Already Yours works
           </h1>
 
-          <p className="text-lg sm:text-xl text-[#63747D] leading-relaxed max-w-2xl font-normal">
+          <p className="text-lg sm:text-xl text-[#5E5D6B] leading-relaxed max-w-2xl font-normal">
             Every year, billions of dollars in Medicare Advantage dental, vision, hearing, and OTC allowances go untouched. We help you find and use what you’ve already paid for.
           </p>
         </div>
@@ -41,10 +41,10 @@ export const HowItWorksPage: React.FC = () => {
         {/* The 3 Core Steps in Depth */}
         <section className="space-y-8">
           <div className="space-y-2">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#176B83]">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#6A5AE0]">
               The Three-Step Discovery Journey
             </span>
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#233640]">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#16151D]">
               From insurance card to usable care in minutes
             </h2>
           </div>
@@ -52,69 +52,69 @@ export const HowItWorksPage: React.FC = () => {
           <div className="space-y-6">
             
             {/* Step 1 */}
-            <div className="p-8 rounded-3xl bg-white border border-[#233640]/15 shadow-sm space-y-4">
+            <div className="p-8 rounded-3xl bg-white border border-[#16151D]/15 shadow-sm space-y-4">
               <div className="flex items-center gap-3">
-                <div className="h-12 w-12 rounded-2xl bg-[#EAF5F7] text-[#176B83] flex items-center justify-center font-bold text-lg">
+                <div className="h-12 w-12 rounded-2xl bg-[#F1EEFE] text-[#6A5AE0] flex items-center justify-center font-bold text-lg">
                   1
                 </div>
                 <div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-[#176B83]">
+                  <span className="text-xs font-bold uppercase tracking-wider text-[#6A5AE0]">
                     Step 1: Snap or Select
                   </span>
-                  <h3 className="text-xl font-bold text-[#233640]">
+                  <h3 className="text-xl font-bold text-[#16151D]">
                     Upload your insurance card or try a sample
                   </h3>
                 </div>
               </div>
 
-              <p className="text-base text-[#63747D] leading-relaxed">
+              <p className="text-base text-[#5E5D6B] leading-relaxed">
                 Take a quick photo of the front of your Medicare Advantage card using your smartphone or computer. If you prefer not to upload your own card, you can pick any of our 15 preloaded sample cards representing major health plans like Select Health, UnitedHealthcare, Humana, Cigna, SCAN, and Blue Cross Blue Shield.
               </p>
 
-              <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-xs text-[#63747D] flex items-center gap-2">
+              <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-xs text-[#5E5D6B] flex items-center gap-2">
                 <Shield className="w-4 h-4 text-emerald-600 shrink-0" />
                 <span>Zero cloud storage: Uploaded card photos remain solely on your local device.</span>
               </div>
             </div>
 
             {/* Step 2 */}
-            <div className="p-8 rounded-3xl bg-white border border-[#233640]/15 shadow-sm space-y-4">
+            <div className="p-8 rounded-3xl bg-white border border-[#16151D]/15 shadow-sm space-y-4">
               <div className="flex items-center gap-3">
-                <div className="h-12 w-12 rounded-2xl bg-[#EAF5F7] text-[#176B83] flex items-center justify-center font-bold text-lg">
+                <div className="h-12 w-12 rounded-2xl bg-[#F1EEFE] text-[#6A5AE0] flex items-center justify-center font-bold text-lg">
                   2
                 </div>
                 <div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-[#176B83]">
+                  <span className="text-xs font-bold uppercase tracking-wider text-[#6A5AE0]">
                     Step 2: Confirm
                   </span>
-                  <h3 className="text-xl font-bold text-[#233640]">
+                  <h3 className="text-xl font-bold text-[#16151D]">
                     Review and confirm your plan details
                   </h3>
                 </div>
               </div>
 
-              <p className="text-base text-[#63747D] leading-relaxed">
+              <p className="text-base text-[#5E5D6B] leading-relaxed">
                 Because healthcare benefits vary by county and specific plan edition (HMO vs PPO), Already Yours presents a plan profile for your confirmation. You can quickly edit any field or choose a different demonstration plan with one click.
               </p>
             </div>
 
             {/* Step 3 */}
-            <div className="p-8 rounded-3xl bg-white border border-[#233640]/15 shadow-sm space-y-4">
+            <div className="p-8 rounded-3xl bg-white border border-[#16151D]/15 shadow-sm space-y-4">
               <div className="flex items-center gap-3">
-                <div className="h-12 w-12 rounded-2xl bg-[#EAF5F7] text-[#176B83] flex items-center justify-center font-bold text-lg">
+                <div className="h-12 w-12 rounded-2xl bg-[#F1EEFE] text-[#6A5AE0] flex items-center justify-center font-bold text-lg">
                   3
                 </div>
                 <div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-[#176B83]">
+                  <span className="text-xs font-bold uppercase tracking-wider text-[#6A5AE0]">
                     Step 3: Discover & Act
                   </span>
-                  <h3 className="text-xl font-bold text-[#233640]">
+                  <h3 className="text-xl font-bold text-[#16151D]">
                     Explore benefits with plain-English checklists
                   </h3>
                 </div>
               </div>
 
-              <p className="text-base text-[#63747D] leading-relaxed">
+              <p className="text-base text-[#5E5D6B] leading-relaxed">
                 Browse through your allowances for dental cleanings, dentures, eyeglasses, hearing aids, gym memberships, and quarterly over-the-counter health items. For every benefit, you receive clear answers to: <strong>What this means</strong>, <strong>What you need to know</strong>, and a step-by-step <strong>Action Checklist</strong> you can check off or print.
               </p>
             </div>
@@ -123,9 +123,9 @@ export const HowItWorksPage: React.FC = () => {
         </section>
 
         {/* Why Benefits Expire Unused */}
-        <section className="rounded-3xl bg-[#12566C] text-white p-8 sm:p-12 space-y-6">
+        <section className="rounded-3xl bg-[#5243C9] text-white p-8 sm:p-12 space-y-6">
           <div className="space-y-2">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#7BD4E2]">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#C9C1FF]">
               The Healthcare Blindspot
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold leading-tight">
@@ -133,7 +133,7 @@ export const HowItWorksPage: React.FC = () => {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-[#EAF5F7]">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-[#F1EEFE]">
             <div className="space-y-2">
               <h3 className="font-bold text-white text-base">1. Dense, Confusing Paperwork</h3>
               <p className="leading-relaxed">
@@ -167,54 +167,54 @@ export const HowItWorksPage: React.FC = () => {
         {/* Caregiver Support Toolkit */}
         <section className="space-y-6">
           <div className="space-y-2">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#176B83]">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#6A5AE0]">
               Family Caregiver Toolkit
             </span>
-            <h2 className="text-2xl sm:text-3xl font-bold text-[#233640]">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#16151D]">
               How adult children can help aging parents
             </h2>
-            <p className="text-base text-[#63747D]">
+            <p className="text-base text-[#5E5D6B]">
               You don't need your parent's private online portal password to help them discover their benefits.
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <div className="p-6 rounded-2xl bg-white border border-[#233640]/15 space-y-3">
-              <div className="h-10 w-10 rounded-xl bg-[#EAF5F7] text-[#176B83] flex items-center justify-center font-bold">
+            <div className="p-6 rounded-2xl bg-white border border-[#16151D]/15 space-y-3">
+              <div className="h-10 w-10 rounded-xl bg-[#F1EEFE] text-[#6A5AE0] flex items-center justify-center font-bold">
                 📱
               </div>
-              <h3 className="font-bold text-base text-[#233640]">Order OTC Items Together</h3>
-              <p className="text-sm text-[#63747D] leading-relaxed">
+              <h3 className="font-bold text-base text-[#16151D]">Order OTC Items Together</h3>
+              <p className="text-sm text-[#5E5D6B] leading-relaxed">
                 Sit down with your parent quarterly for 10 minutes. Go through the online catalog and order daily essentials: pain relief ointments, calcium supplements, vitamins, and first-aid kits delivered to their door.
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-white border border-[#233640]/15 space-y-3">
-              <div className="h-10 w-10 rounded-xl bg-[#EAF5F7] text-[#176B83] flex items-center justify-center font-bold">
+            <div className="p-6 rounded-2xl bg-white border border-[#16151D]/15 space-y-3">
+              <div className="h-10 w-10 rounded-xl bg-[#F1EEFE] text-[#6A5AE0] flex items-center justify-center font-bold">
                 🚗
               </div>
-              <h3 className="font-bold text-base text-[#233640]">Book Safe Doctor Rides</h3>
-              <p className="text-sm text-[#63747D] leading-relaxed">
+              <h3 className="font-bold text-base text-[#16151D]">Book Safe Doctor Rides</h3>
+              <p className="text-sm text-[#5E5D6B] leading-relaxed">
                 If taking time off work to drive them to specialist appointments is tough, use their plan's 24 annual transportation rides. You can accompany them for free as an authorized caregiver escort.
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-white border border-[#233640]/15 space-y-3">
-              <div className="h-10 w-10 rounded-xl bg-[#EAF5F7] text-[#176B83] flex items-center justify-center font-bold">
+            <div className="p-6 rounded-2xl bg-white border border-[#16151D]/15 space-y-3">
+              <div className="h-10 w-10 rounded-xl bg-[#F1EEFE] text-[#6A5AE0] flex items-center justify-center font-bold">
                 🖨️
               </div>
-              <h3 className="font-bold text-base text-[#233640]">Print the Action Checklist</h3>
-              <p className="text-sm text-[#63747D] leading-relaxed">
+              <h3 className="font-bold text-base text-[#16151D]">Print the Action Checklist</h3>
+              <p className="text-sm text-[#5E5D6B] leading-relaxed">
                 Use our &ldquo;Print Checklist&rdquo; button to create a clear physical one-pager your parent can bring to their dentist or eye doctor checkup.
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-white border border-[#233640]/15 space-y-3">
-              <div className="h-10 w-10 rounded-xl bg-[#EAF5F7] text-[#176B83] flex items-center justify-center font-bold">
+            <div className="p-6 rounded-2xl bg-white border border-[#16151D]/15 space-y-3">
+              <div className="h-10 w-10 rounded-xl bg-[#F1EEFE] text-[#6A5AE0] flex items-center justify-center font-bold">
                 🍲
               </div>
-              <h3 className="font-bold text-base text-[#233640]">Ask for Discharge Meals</h3>
-              <p className="text-sm text-[#63747D] leading-relaxed">
+              <h3 className="font-bold text-base text-[#16151D]">Ask for Discharge Meals</h3>
+              <p className="text-sm text-[#5E5D6B] leading-relaxed">
                 If your parent has a hospital or rehab stay, remind the hospital social worker before discharge to order their 28 covered home-delivered meals.
               </p>
             </div>
@@ -222,17 +222,17 @@ export const HowItWorksPage: React.FC = () => {
         </section>
 
         {/* CTA Banner */}
-        <div className="rounded-3xl bg-[#EAF5F7] p-8 sm:p-10 border border-[#176B83]/20 text-center space-y-4">
-          <h2 className="text-2xl font-bold text-[#12566C]">
+        <div className="rounded-3xl bg-[#F1EEFE] p-8 sm:p-10 border border-[#6A5AE0]/20 text-center space-y-4">
+          <h2 className="text-2xl font-bold text-[#5243C9]">
             Ready to discover what’s already yours?
           </h2>
-          <p className="text-[#63747D] text-sm max-w-md mx-auto">
+          <p className="text-[#5E5D6B] text-sm max-w-md mx-auto">
             Try our sample gallery or upload your card photo. Takes less than two minutes.
           </p>
           <div>
             <Link
               to="/upload"
-              className="inline-flex items-center gap-2 px-8 py-3.5 bg-[#176B83] hover:bg-[#12566C] text-white font-bold rounded-xl shadow-md transition-all text-base"
+              className="inline-flex items-center gap-2 px-8 py-3.5 bg-[#6A5AE0] hover:bg-[#5243C9] text-white font-bold rounded-xl shadow-md transition-all text-base"
             >
               <span>Start Discovery Journey</span>
               <ArrowRight className="w-5 h-5" />

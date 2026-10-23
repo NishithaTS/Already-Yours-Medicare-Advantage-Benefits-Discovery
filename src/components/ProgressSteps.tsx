@@ -32,7 +32,7 @@ export const ProgressSteps: React.FC = () => {
   if (currentIndex === -1) return null; // Don't show on Home, How It Works, Help
 
   return (
-    <div className="w-full bg-[#EAF5F7]/60 border-b border-[#176B83]/15 py-4 px-4 sm:px-6">
+    <div className="w-full bg-[#F1EEFE]/60 border-b border-[#6A5AE0]/15 py-4 px-4 sm:px-6">
       <div className="max-w-4xl mx-auto">
         <nav aria-label="Progress">
           <ol className="flex items-center justify-between">
@@ -47,7 +47,7 @@ export const ProgressSteps: React.FC = () => {
                   {idx > 0 && (
                     <div
                       className={`absolute top-4 left-[-50%] right-[50%] h-[2px] -translate-y-1/2 transition-colors ${
-                        idx <= currentIndex ? 'bg-[#176B83]' : 'bg-[#233640]/15'
+                        idx <= currentIndex ? 'bg-[#6A5AE0]' : 'bg-[#16151D]/15'
                       }`}
                       aria-hidden="true"
                     />
@@ -57,7 +57,7 @@ export const ProgressSteps: React.FC = () => {
                   {isCompleted ? (
                     <Link
                       to={s.path}
-                      className="relative z-10 flex h-9 w-9 items-center justify-center rounded-full bg-[#176B83] text-white hover:bg-[#12566C] transition-colors focus-visible:ring-2 focus-visible:ring-[#176B83]"
+                      className="relative z-10 flex h-9 w-9 items-center justify-center rounded-full bg-[#6A5AE0] text-white hover:bg-[#5243C9] transition-colors focus-visible:ring-2 focus-visible:ring-[#6A5AE0]"
                       title={`Return to step ${s.step}: ${s.label}`}
                     >
                       <Check className="h-4 w-4 stroke-[2.5]" />
@@ -65,14 +65,14 @@ export const ProgressSteps: React.FC = () => {
                     </Link>
                   ) : isCurrent ? (
                     <div
-                      className="relative z-10 flex h-9 w-9 items-center justify-center rounded-full bg-white border-2 border-[#176B83] text-[#176B83] shadow-sm font-bold text-sm"
+                      className="relative z-10 flex h-9 w-9 items-center justify-center rounded-full bg-white border-2 border-[#6A5AE0] text-[#6A5AE0] shadow-sm font-bold text-sm"
                       aria-current="step"
                     >
                       <StepIcon className="h-4 w-4" />
                       <span className="sr-only">{s.label} (Current)</span>
                     </div>
                   ) : (
-                    <div className="relative z-10 flex h-9 w-9 items-center justify-center rounded-full bg-white border border-[#233640]/20 text-[#63747D] text-sm">
+                    <div className="relative z-10 flex h-9 w-9 items-center justify-center rounded-full bg-white border border-[#16151D]/20 text-[#5E5D6B] text-sm">
                       <span className="text-xs font-semibold">{s.step}</span>
                       <span className="sr-only">{s.label}</span>
                     </div>
@@ -83,15 +83,15 @@ export const ProgressSteps: React.FC = () => {
                     <span
                       className={`block text-xs sm:text-sm font-semibold whitespace-nowrap ${
                         isCurrent
-                          ? 'text-[#12566C]'
+                          ? 'text-[#5243C9]'
                           : isCompleted
-                          ? 'text-[#233640] hover:text-[#176B83]'
-                          : 'text-[#63747D]'
+                          ? 'text-[#16151D] hover:text-[#6A5AE0]'
+                          : 'text-[#5E5D6B]'
                       }`}
                     >
                       {s.label}
                     </span>
-                    <span className="hidden sm:block text-[11px] text-[#63747D]">
+                    <span className="hidden sm:block text-[11px] text-[#5E5D6B]">
                       Step {s.step} of 4
                     </span>
                   </div>

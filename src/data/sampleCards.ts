@@ -198,7 +198,7 @@ export const SAMPLE_CARDS: SampleCard[] = [
     serviceArea: 'Mid-Atlantic & Southern States',
     planDetailsVerified: false,
     notes: 'Features Part B premium reduction and preventative care allowances.',
-    accentColor: '#12566C',
+    accentColor: '#5243C9',
     textColor: '#FFFFFF',
     memberIdDummy: 'CGH-4491023',
     groupDummy: 'CG-SAVE',

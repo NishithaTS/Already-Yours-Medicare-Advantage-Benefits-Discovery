@@ -22,34 +22,34 @@ export const UploadPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#FCFCFA]">
+    <div className="min-h-screen bg-[#F5F5F7]">
       <ProgressSteps />
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-8">
         {/* Page Title & Context */}
         <div className="max-w-3xl space-y-2 text-left">
-          <span className="text-xs font-bold uppercase tracking-wider text-[#176B83]">
+          <span className="text-xs font-bold uppercase tracking-wider text-[#6A5AE0]">
             Step 1 of 4: Choose Your Insurance Card
           </span>
-          <h1 className="text-3xl sm:text-4xl font-bold text-[#233640]">
+          <h1 className="text-3xl sm:text-4xl font-bold text-[#16151D]">
             Let’s start with your health plan card
           </h1>
-          <p className="text-base sm:text-lg text-[#63747D] leading-relaxed">
+          <p className="text-base sm:text-lg text-[#5E5D6B] leading-relaxed">
             Upload a photo of your Medicare Advantage insurance card, or select one of our 15 sample cards to try the demonstration immediately.
           </p>
         </div>
 
         {/* Tab Selection: Two equally clear choices */}
-        <div className="flex border-b border-[#233640]/15 gap-4">
+        <div className="flex border-b border-[#16151D]/15 gap-4">
           <button
             onClick={() => setActiveTab('sample')}
             className={`min-h-[44px] pb-3 text-base font-bold flex items-center gap-2 border-b-2 transition-colors ${
               activeTab === 'sample'
-                ? 'border-[#176B83] text-[#12566C]'
-                : 'border-transparent text-[#63747D] hover:text-[#233640]'
+                ? 'border-[#6A5AE0] text-[#5243C9]'
+                : 'border-transparent text-[#5E5D6B] hover:text-[#16151D]'
             }`}
           >
-            <Layers className="w-5 h-5 text-[#176B83]" />
+            <Layers className="w-5 h-5 text-[#6A5AE0]" />
             <span>Option A: Try a Sample Card (15 Preloaded)</span>
           </button>
 
@@ -57,11 +57,11 @@ export const UploadPage: React.FC = () => {
             onClick={() => setActiveTab('upload')}
             className={`min-h-[44px] pb-3 text-base font-bold flex items-center gap-2 border-b-2 transition-colors ${
               activeTab === 'upload'
-                ? 'border-[#176B83] text-[#12566C]'
-                : 'border-transparent text-[#63747D] hover:text-[#233640]'
+                ? 'border-[#6A5AE0] text-[#5243C9]'
+                : 'border-transparent text-[#5E5D6B] hover:text-[#16151D]'
             }`}
           >
-            <UploadCloud className="w-5 h-5 text-[#176B83]" />
+            <UploadCloud className="w-5 h-5 text-[#6A5AE0]" />
             <span>Option B: Upload My Card</span>
           </button>
         </div>
@@ -78,7 +78,7 @@ export const UploadPage: React.FC = () => {
         )}
 
         {/* Safe Prototype Information Note */}
-        <div className="p-4 rounded-xl bg-white border border-[#233640]/10 flex items-start gap-3 text-xs text-[#63747D] max-w-3xl mx-auto">
+        <div className="p-4 rounded-xl bg-white border border-[#16151D]/10 flex items-start gap-3 text-xs text-[#5E5D6B] max-w-3xl mx-auto">
           <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
           <p>
             <strong>Privacy Guarantee:</strong> Already Yours does not send card images to any cloud OCR or machine learning service. All sample selection and photo processing happens locally in your browser.

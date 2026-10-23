@@ -51,23 +51,23 @@ export const BenefitsDashboardPage: React.FC = () => {
   const getBenefitIcon = (iconName: string) => {
     switch (iconName) {
       case 'Smile':
-        return <Smile className="w-6 h-6 text-[#6A5AE0]" />;
+        return <Smile className="w-6 h-6 text-[#176B83]" />;
       case 'Ear':
-        return <Ear className="w-6 h-6 text-[#6A5AE0]" />;
+        return <Ear className="w-6 h-6 text-[#176B83]" />;
       case 'ShoppingBag':
-        return <ShoppingBag className="w-6 h-6 text-[#6A5AE0]" />;
+        return <ShoppingBag className="w-6 h-6 text-[#176B83]" />;
       case 'Eye':
-        return <Eye className="w-6 h-6 text-[#6A5AE0]" />;
+        return <Eye className="w-6 h-6 text-[#176B83]" />;
       case 'Activity':
-        return <Activity className="w-6 h-6 text-[#6A5AE0]" />;
+        return <Activity className="w-6 h-6 text-[#176B83]" />;
       case 'Car':
-        return <Car className="w-6 h-6 text-[#6A5AE0]" />;
+        return <Car className="w-6 h-6 text-[#176B83]" />;
       case 'Utensils':
-        return <Utensils className="w-6 h-6 text-[#6A5AE0]" />;
+        return <Utensils className="w-6 h-6 text-[#176B83]" />;
       case 'Footprints':
-        return <Footprints className="w-6 h-6 text-[#6A5AE0]" />;
+        return <Footprints className="w-6 h-6 text-[#176B83]" />;
       default:
-        return <Sparkles className="w-6 h-6 text-[#6A5AE0]" />;
+        return <Sparkles className="w-6 h-6 text-[#176B83]" />;
     }
   };
 
@@ -99,24 +99,24 @@ export const BenefitsDashboardPage: React.FC = () => {
   }, [searchQuery, selectedCategory, sortBy, savedBenefitIds]);
 
   return (
-    <div className="min-h-screen bg-[#F5F5F7] pb-16">
+    <div className="min-h-screen bg-[#FCFCFA] pb-16">
       <ProgressSteps />
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-8">
         
         {/* Confirmed Plan Ribbon */}
-        <div className="p-4 sm:p-5 rounded-2xl bg-white border border-[#6A5AE0]/20 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div className="p-4 sm:p-5 rounded-2xl bg-white border border-[#176B83]/20 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <div className="h-10 w-10 rounded-xl bg-[#F1EEFE] text-[#6A5AE0] flex items-center justify-center font-bold shrink-0">
-              <Shield className="w-5 h-5 text-[#6A5AE0]" />
+            <div className="h-10 w-10 rounded-xl bg-[#EAF5F7] text-[#176B83] flex items-center justify-center font-bold shrink-0">
+              <Shield className="w-5 h-5 text-[#176B83]" />
             </div>
             <div>
-              <div className="text-xs text-[#5E5D6B] uppercase font-bold tracking-wider">
+              <div className="text-xs text-[#63747D] uppercase font-bold tracking-wider">
                 Active Plan Demonstration
               </div>
-              <div className="text-base font-bold text-[#16151D] flex flex-wrap items-center gap-2">
+              <div className="text-base font-bold text-[#233640] flex flex-wrap items-center gap-2">
                 <span>{currentPlan.planName}</span>
-                <span className="font-mono text-xs text-[#6A5AE0] bg-[#F1EEFE] px-2 py-0.5 rounded font-normal">
+                <span className="font-mono text-xs text-[#176B83] bg-[#EAF5F7] px-2 py-0.5 rounded font-normal">
                   {currentPlan.contractId}
                 </span>
               </div>
@@ -126,14 +126,14 @@ export const BenefitsDashboardPage: React.FC = () => {
           <div className="flex items-center gap-3 shrink-0">
             <Link
               to="/confirm-plan"
-              className="text-xs font-semibold text-[#6A5AE0] hover:text-[#5243C9] py-1 underline-offset-4 hover:underline"
+              className="text-xs font-semibold text-[#176B83] hover:text-[#12566C] py-1 underline-offset-4 hover:underline"
             >
               Change or edit plan
             </Link>
 
             <Link
               to="/saved"
-              className="px-3.5 py-2 rounded-lg bg-[#F1EEFE] hover:bg-[#6A5AE0] text-[#5243C9] hover:text-white font-bold text-xs transition-colors flex items-center gap-1.5"
+              className="px-3.5 py-2 rounded-lg bg-[#EAF5F7] hover:bg-[#176B83] text-[#12566C] hover:text-white font-bold text-xs transition-colors flex items-center gap-1.5"
             >
               <Bookmark className="w-3.5 h-3.5" />
               <span>Saved Benefits ({savedBenefitIds.length})</span>
@@ -143,13 +143,13 @@ export const BenefitsDashboardPage: React.FC = () => {
 
         {/* Dashboard Header */}
         <div className="max-w-3xl space-y-2 text-left">
-          <span className="text-xs font-bold uppercase tracking-wider text-[#6A5AE0]">
+          <span className="text-xs font-bold uppercase tracking-wider text-[#176B83]">
             Step 4 of 4: Discover Your Benefits
           </span>
-          <h1 className="text-3xl sm:text-4xl font-bold text-[#16151D] tracking-tight">
+          <h1 className="text-3xl sm:text-4xl font-bold text-[#233640] tracking-tight">
             Here are benefits to explore.
           </h1>
-          <p className="text-base sm:text-lg text-[#5E5D6B] leading-relaxed">
+          <p className="text-base sm:text-lg text-[#63747D] leading-relaxed">
             Understand what's included in your plan and the steps you may need to take.
           </p>
         </div>
@@ -159,18 +159,18 @@ export const BenefitsDashboardPage: React.FC = () => {
           <div className="flex flex-col md:flex-row items-stretch md:items-center gap-3">
             {/* Search Input */}
             <div className="relative flex-1">
-              <Search className="w-4 h-4 text-[#5E5D6B] absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+              <Search className="w-4 h-4 text-[#63747D] absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
               <input
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search benefits (e.g. dental, hearing aids, OTC, rides, gym)…"
-                className="w-full pl-10 pr-10 py-3 rounded-xl border border-[#16151D]/15 bg-white text-sm focus-visible:ring-2 focus-visible:ring-[#6A5AE0] shadow-xs"
+                className="w-full pl-10 pr-10 py-3 rounded-xl border border-[#233640]/15 bg-white text-sm focus-visible:ring-2 focus-visible:ring-[#176B83] shadow-xs"
               />
               {searchQuery && (
                 <button
                   onClick={() => setSearchQuery('')}
-                  className="absolute right-3.5 top-1/2 -translate-y-1/2 text-[#5E5D6B] hover:text-[#16151D]"
+                  className="absolute right-3.5 top-1/2 -translate-y-1/2 text-[#63747D] hover:text-[#233640]"
                   aria-label="Clear search"
                 >
                   <X className="w-4 h-4" />
@@ -180,15 +180,15 @@ export const BenefitsDashboardPage: React.FC = () => {
 
             {/* Sort Selector */}
             <div className="flex items-center gap-2 shrink-0">
-              <SlidersHorizontal className="w-4 h-4 text-[#5E5D6B]" />
-              <label htmlFor="sortSelect" className="text-xs font-bold text-[#5E5D6B] uppercase">
+              <SlidersHorizontal className="w-4 h-4 text-[#63747D]" />
+              <label htmlFor="sortSelect" className="text-xs font-bold text-[#63747D] uppercase">
                 Sort:
               </label>
               <select
                 id="sortSelect"
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value as any)}
-                className="px-3 py-2.5 rounded-xl border border-[#16151D]/15 bg-white text-xs font-semibold text-[#16151D] focus-visible:ring-2 focus-visible:ring-[#6A5AE0]"
+                className="px-3 py-2.5 rounded-xl border border-[#233640]/15 bg-white text-xs font-semibold text-[#233640] focus-visible:ring-2 focus-visible:ring-[#176B83]"
               >
                 <option value="allowance">Highest Allowance First</option>
                 <option value="name">Alphabetical (A–Z)</option>
@@ -205,8 +205,8 @@ export const BenefitsDashboardPage: React.FC = () => {
                 onClick={() => setSelectedCategory(cat.id)}
                 className={`min-h-[40px] px-3.5 py-1.5 rounded-lg text-xs font-bold whitespace-nowrap shrink-0 transition-colors ${
                   selectedCategory === cat.id
-                    ? 'bg-[#6A5AE0] text-white shadow-sm'
-                    : 'bg-white border border-[#16151D]/15 text-[#5E5D6B] hover:text-[#16151D] hover:bg-[#F1EEFE]'
+                    ? 'bg-[#176B83] text-white shadow-sm'
+                    : 'bg-white border border-[#233640]/15 text-[#63747D] hover:text-[#233640] hover:bg-[#EAF5F7]'
                 }`}
               >
                 {cat.label}
@@ -226,12 +226,12 @@ export const BenefitsDashboardPage: React.FC = () => {
               return (
                 <div
                   key={benefit.id}
-                  className="rounded-3xl bg-white border border-[#16151D]/15 p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between text-left group"
+                  className="rounded-3xl bg-white border border-[#233640]/15 p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between text-left group"
                 >
                   <div className="space-y-4">
                     {/* Top Row: Icon + Save Bookmark */}
                     <div className="flex items-start justify-between gap-3">
-                      <div className="h-12 w-12 rounded-2xl bg-[#F1EEFE] flex items-center justify-center shrink-0">
+                      <div className="h-12 w-12 rounded-2xl bg-[#EAF5F7] flex items-center justify-center shrink-0">
                         {getBenefitIcon(benefit.iconName)}
                       </div>
 
@@ -239,8 +239,8 @@ export const BenefitsDashboardPage: React.FC = () => {
                         onClick={() => toggleSaveBenefit(benefit.id)}
                         className={`min-h-[44px] min-w-[44px] p-2.5 rounded-xl border transition-colors flex items-center justify-center ${
                           saved
-                            ? 'bg-[#6A5AE0] text-white border-[#6A5AE0]'
-                            : 'bg-white text-[#5E5D6B] border-[#16151D]/15 hover:bg-[#F1EEFE] hover:text-[#6A5AE0]'
+                            ? 'bg-[#176B83] text-white border-[#176B83]'
+                            : 'bg-white text-[#63747D] border-[#233640]/15 hover:bg-[#EAF5F7] hover:text-[#176B83]'
                         }`}
                         title={saved ? 'Remove from saved benefits' : 'Save benefit to checklist'}
                         aria-label={saved ? `Unsave ${benefit.name}` : `Save ${benefit.name}`}
@@ -255,35 +255,35 @@ export const BenefitsDashboardPage: React.FC = () => {
 
                     {/* Benefit Name & Category (Clean metadata without pill sandwich) */}
                     <div>
-                      <div className="text-xs font-semibold text-[#6A5AE0] uppercase tracking-wider">
+                      <div className="text-xs font-semibold text-[#176B83] uppercase tracking-wider">
                         {benefit.categoryLabel}
                       </div>
-                      <h3 className="text-xl font-bold text-[#16151D] group-hover:text-[#6A5AE0] transition-colors mt-0.5">
+                      <h3 className="text-xl font-bold text-[#233640] group-hover:text-[#176B83] transition-colors mt-0.5">
                         {benefit.name}
                       </h3>
                     </div>
 
                     {/* Allowance Highlight Box */}
-                    <div className="p-3.5 rounded-xl bg-[#F5F5F7] border border-[#16151D]/10 space-y-1">
-                      <div className="text-[11px] uppercase tracking-wider text-[#5E5D6B] font-bold">
+                    <div className="p-3.5 rounded-xl bg-[#FCFCFA] border border-[#233640]/10 space-y-1">
+                      <div className="text-[11px] uppercase tracking-wider text-[#63747D] font-bold">
                         Illustrative Allowance
                       </div>
-                      <div className="text-lg font-bold text-[#5243C9] tabular-nums">
+                      <div className="text-lg font-bold text-[#12566C] tabular-nums">
                         {benefit.allowance}
                       </div>
-                      <div className="text-xs text-[#5E5D6B]">
+                      <div className="text-xs text-[#63747D]">
                         Frequency: {benefit.frequency}
                       </div>
                     </div>
 
                     {/* Plain English summary */}
-                    <p className="text-sm text-[#5E5D6B] leading-relaxed line-clamp-2">
+                    <p className="text-sm text-[#63747D] leading-relaxed line-clamp-2">
                       {benefit.briefSummary}
                     </p>
 
                     {/* Checklist Progress if any completed */}
                     {completedCount > 0 && (
-                      <div className="pt-2 border-t border-[#16151D]/10 text-xs text-emerald-700 flex items-center justify-between">
+                      <div className="pt-2 border-t border-[#233640]/10 text-xs text-emerald-700 flex items-center justify-between">
                         <span>Checklist progress:</span>
                         <strong className="font-semibold">{completedCount} of {totalSteps} steps completed</strong>
                       </div>
@@ -291,8 +291,8 @@ export const BenefitsDashboardPage: React.FC = () => {
 
                     {/* Caregiver note callout if enabled */}
                     {caregiverModeEnabled && benefit.caregiverTip && (
-                      <div className="p-3 rounded-xl bg-[#F1EEFE] border border-[#6A5AE0]/20 text-xs text-[#5243C9] flex items-start gap-2">
-                        <HeartHandshake className="w-4 h-4 text-[#6A5AE0] shrink-0 mt-0.5" />
+                      <div className="p-3 rounded-xl bg-[#EAF5F7] border border-[#176B83]/20 text-xs text-[#12566C] flex items-start gap-2">
+                        <HeartHandshake className="w-4 h-4 text-[#176B83] shrink-0 mt-0.5" />
                         <p className="leading-snug">
                           <strong>Caregiver tip:</strong> {benefit.caregiverTip}
                         </p>
@@ -301,10 +301,10 @@ export const BenefitsDashboardPage: React.FC = () => {
                   </div>
 
                   {/* Card Action Link */}
-                  <div className="pt-5 mt-4 border-t border-[#16151D]/10">
+                  <div className="pt-5 mt-4 border-t border-[#233640]/10">
                     <Link
                       to={`/benefits/${benefit.id}`}
-                      className="w-full min-h-[44px] py-2.5 px-4 bg-[#F1EEFE] hover:bg-[#6A5AE0] text-[#5243C9] hover:text-white font-bold text-sm rounded-xl transition-colors flex items-center justify-center gap-2 group-hover:bg-[#6A5AE0] group-hover:text-white"
+                      className="w-full min-h-[44px] py-2.5 px-4 bg-[#EAF5F7] hover:bg-[#176B83] text-[#12566C] hover:text-white font-bold text-sm rounded-xl transition-colors flex items-center justify-center gap-2 group-hover:bg-[#176B83] group-hover:text-white"
                     >
                       <span>See How to Use It</span>
                       <ChevronRight className="w-4 h-4" />
@@ -316,12 +316,12 @@ export const BenefitsDashboardPage: React.FC = () => {
           </div>
         ) : (
           /* Empty Search State */
-          <div className="rounded-3xl bg-white border border-[#16151D]/15 p-12 text-center max-w-lg mx-auto space-y-4">
-            <div className="h-14 w-14 rounded-2xl bg-[#F1EEFE] text-[#6A5AE0] flex items-center justify-center mx-auto">
+          <div className="rounded-3xl bg-white border border-[#233640]/15 p-12 text-center max-w-lg mx-auto space-y-4">
+            <div className="h-14 w-14 rounded-2xl bg-[#EAF5F7] text-[#176B83] flex items-center justify-center mx-auto">
               <Search className="w-6 h-6" />
             </div>
-            <h3 className="text-xl font-bold text-[#16151D]">No matching benefits found</h3>
-            <p className="text-sm text-[#5E5D6B]">
+            <h3 className="text-xl font-bold text-[#233640]">No matching benefits found</h3>
+            <p className="text-sm text-[#63747D]">
               We couldn’t find any benefits matching &ldquo;{searchQuery}&rdquo;. Try clearing your search keywords or switching category filters.
             </p>
             <button
@@ -329,7 +329,7 @@ export const BenefitsDashboardPage: React.FC = () => {
                 setSearchQuery('');
                 setSelectedCategory('all');
               }}
-              className="px-5 py-2.5 bg-[#6A5AE0] text-white text-xs font-bold rounded-xl shadow-sm hover:bg-[#5243C9] transition-colors"
+              className="px-5 py-2.5 bg-[#176B83] text-white text-xs font-bold rounded-xl shadow-sm hover:bg-[#12566C] transition-colors"
             >
               Reset Filters
             </button>
@@ -337,8 +337,8 @@ export const BenefitsDashboardPage: React.FC = () => {
         )}
 
         {/* Informative Disclaimer */}
-        <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs text-[#5E5D6B] flex items-start gap-2.5">
-          <Info className="w-4 h-4 text-[#6A5AE0] shrink-0 mt-0.5" />
+        <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs text-[#63747D] flex items-start gap-2.5">
+          <Info className="w-4 h-4 text-[#176B83] shrink-0 mt-0.5" />
           <p className="leading-relaxed">
             <strong>Demonstration Values Notice:</strong> The allowances and benefit frequencies listed above are realistic representative figures for educational discovery. Already Yours does not access or display individual claims history, verified remaining account balances, or personal health records.
           </p>

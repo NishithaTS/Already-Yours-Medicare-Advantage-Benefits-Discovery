@@ -23,7 +23,7 @@ export const InsuranceCardSpecimen: React.FC<Props> = ({
   if (isCustomUpload && customImageUrl) {
     return (
       <div
-        className={`relative rounded-2xl overflow-hidden border-2 border-[#6A5AE0] shadow-md bg-slate-900 transition-all ${
+        className={`relative rounded-2xl overflow-hidden border-2 border-[#176B83] shadow-md bg-slate-900 transition-all ${
           large ? 'max-w-2xl mx-auto aspect-[1.58/1]' : 'w-full aspect-[1.58/1]'
         } ${className}`}
       >
@@ -32,7 +32,7 @@ export const InsuranceCardSpecimen: React.FC<Props> = ({
           alt="Uploaded Insurance Card"
           className="w-full h-full object-contain bg-slate-950"
         />
-        <div className="absolute top-3 left-3 bg-[#6A5AE0] text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow-sm">
+        <div className="absolute top-3 left-3 bg-[#176B83] text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow-sm">
           Your Uploaded Card
         </div>
         <div className="absolute bottom-3 right-3 bg-black/75 backdrop-blur-sm text-white text-[11px] px-2.5 py-1 rounded-md">
@@ -47,7 +47,7 @@ export const InsuranceCardSpecimen: React.FC<Props> = ({
 
   return (
     <div
-      className={`relative rounded-2xl overflow-hidden border border-[#16151D]/15 shadow-sm transition-all bg-white flex flex-col justify-between ${
+      className={`relative rounded-2xl overflow-hidden border border-[#233640]/15 shadow-sm transition-all bg-white flex flex-col justify-between ${
         large ? 'max-w-2xl mx-auto aspect-[1.58/1] shadow-lg' : 'w-full aspect-[1.58/1]'
       } ${className}`}
       style={{
@@ -77,13 +77,13 @@ export const InsuranceCardSpecimen: React.FC<Props> = ({
                   {card.carrier}
                 </span>
               </div>
-              <p className="text-[11px] sm:text-xs text-[#F1EEFE]/80 truncate max-w-[200px] sm:max-w-[280px]">
+              <p className="text-[11px] sm:text-xs text-[#EAF5F7]/80 truncate max-w-[200px] sm:max-w-[280px]">
                 {card.planName}
               </p>
             </div>
 
             <div className="text-right">
-              <span className="inline-block text-[10px] sm:text-[11px] font-extrabold px-2 py-0.5 rounded bg-white/20 text-[#F1EEFE] tracking-wider uppercase">
+              <span className="inline-block text-[10px] sm:text-[11px] font-extrabold px-2 py-0.5 rounded bg-white/20 text-[#EAF5F7] tracking-wider uppercase">
                 {card.planType}
               </span>
               <p className="text-[9px] sm:text-[10px] text-white/60 font-mono mt-0.5">

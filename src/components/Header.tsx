@@ -25,12 +25,12 @@ export const Header: React.FC = () => {
   const pillClass = (path: string) =>
     `inline-flex items-center gap-1.5 h-10 px-4 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
       isActive(path)
-        ? 'bg-[#16151D] text-white'
-        : 'bg-[#F5F5F7] text-[#16151D] hover:bg-[#F1EEFE] hover:text-[#5243C9]'
+        ? 'bg-[#233640] text-white'
+        : 'bg-[#FCFCFA] text-[#233640] hover:bg-[#EAF5F7] hover:text-[#12566C]'
     }`;
 
   return (
-    <header className="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-[#16151D]/5">
+    <header className="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-[#233640]/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20 gap-4">
           <nav aria-label="Primary" className="hidden xl:flex items-center gap-2 flex-1">
@@ -39,7 +39,7 @@ export const Header: React.FC = () => {
                 {link.to === '/' && <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-current" />}
                 <span>{link.label}</span>
                 {link.to === '/saved' && savedBenefitIds.length > 0 && (
-                  <span className="inline-flex items-center justify-center min-w-5 h-5 px-1.5 text-[11px] font-semibold rounded-full bg-[#6A5AE0] text-white">
+                  <span className="inline-flex items-center justify-center min-w-5 h-5 px-1.5 text-[11px] font-semibold rounded-full bg-[#176B83] text-white">
                     {savedBenefitIds.length}
                   </span>
                 )}
@@ -49,7 +49,7 @@ export const Header: React.FC = () => {
 
           <Link
             to="/"
-            className="flex items-center gap-2.5 h-12 pl-1.5 pr-4 rounded-full bg-[#F5F5F7] shrink-0 group"
+            className="flex items-center gap-2.5 h-12 pl-1.5 pr-4 rounded-full bg-[#FCFCFA] shrink-0 group"
             aria-label="Already Yours home"
           >
             <span className="h-9 w-9 rounded-full bg-white flex items-center justify-center shadow-sm">
@@ -59,7 +59,7 @@ export const Header: React.FC = () => {
                 className="h-6 w-6 object-contain transition-transform group-hover:scale-110"
               />
             </span>
-            <span className="text-sm font-semibold tracking-wide uppercase text-[#16151D]">Already Yours</span>
+            <span className="text-sm font-semibold tracking-wide uppercase text-[#233640]">Already Yours</span>
           </Link>
 
           <div className="flex items-center justify-end gap-2 flex-1">
@@ -79,8 +79,8 @@ export const Header: React.FC = () => {
               title="Toggle large text"
               className={`h-10 w-10 rounded-full flex items-center justify-center transition-colors ${
                 fontSizePreference === 'large'
-                  ? 'bg-[#6A5AE0] text-white'
-                  : 'bg-[#F5F5F7] text-[#16151D] hover:bg-[#F1EEFE]'
+                  ? 'bg-[#176B83] text-white'
+                  : 'bg-[#FCFCFA] text-[#233640] hover:bg-[#EAF5F7]'
               }`}
             >
               <Type className="w-4 h-4" />
@@ -94,8 +94,8 @@ export const Header: React.FC = () => {
               title="Toggle caregiver tips"
               className={`h-10 px-3 rounded-full flex items-center gap-1.5 text-sm font-medium transition-colors ${
                 caregiverModeEnabled
-                  ? 'bg-[#F1EEFE] text-[#5243C9] ring-1 ring-[#6A5AE0]'
-                  : 'bg-[#F5F5F7] text-[#16151D] hover:bg-[#F1EEFE]'
+                  ? 'bg-[#EAF5F7] text-[#12566C] ring-1 ring-[#176B83]'
+                  : 'bg-[#FCFCFA] text-[#233640] hover:bg-[#EAF5F7]'
               }`}
             >
               <HeartHandshake className="w-4 h-4" />
@@ -104,7 +104,7 @@ export const Header: React.FC = () => {
 
             <Link
               to="/upload"
-              className="hidden sm:inline-flex h-10 items-center gap-1.5 px-5 rounded-full bg-[#6A5AE0] hover:bg-[#5243C9] text-white text-sm font-medium transition-colors whitespace-nowrap"
+              className="hidden sm:inline-flex h-10 items-center gap-1.5 px-5 rounded-full bg-[#176B83] hover:bg-[#12566C] text-white text-sm font-medium transition-colors whitespace-nowrap"
             >
               Find My Benefits
               <ArrowUpRight className="w-4 h-4" />
@@ -113,7 +113,7 @@ export const Header: React.FC = () => {
             <button
               type="button"
               onClick={() => setMobileMenuOpen((open) => !open)}
-              className="xl:hidden h-10 w-10 rounded-full bg-[#F5F5F7] text-[#16151D] flex items-center justify-center"
+              className="xl:hidden h-10 w-10 rounded-full bg-[#FCFCFA] text-[#233640] flex items-center justify-center"
               aria-label={mobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
               aria-expanded={mobileMenuOpen}
             >
@@ -124,7 +124,7 @@ export const Header: React.FC = () => {
       </div>
 
       {mobileMenuOpen && (
-        <nav aria-label="Mobile" className="xl:hidden bg-white border-b border-[#16151D]/5 px-4 pt-2 pb-6 animate-fadeIn">
+        <nav aria-label="Mobile" className="xl:hidden bg-white border-b border-[#233640]/5 px-4 pt-2 pb-6 animate-fadeIn">
           <div className="flex flex-col gap-1.5">
             {[...PRIMARY_LINKS, ...SECONDARY_LINKS].map((link) => (
               <Link
@@ -132,12 +132,12 @@ export const Header: React.FC = () => {
                 to={link.to}
                 onClick={() => setMobileMenuOpen(false)}
                 className={`flex items-center justify-between px-5 py-3.5 rounded-2xl text-base font-medium ${
-                  isActive(link.to) ? 'bg-[#F1EEFE] text-[#5243C9]' : 'text-[#16151D] hover:bg-[#F5F5F7]'
+                  isActive(link.to) ? 'bg-[#EAF5F7] text-[#12566C]' : 'text-[#233640] hover:bg-[#FCFCFA]'
                 }`}
               >
                 <span>{link.label}</span>
                 {link.to === '/saved' && savedBenefitIds.length > 0 && (
-                  <span className="px-2.5 py-0.5 text-xs font-semibold rounded-full bg-[#6A5AE0] text-white">
+                  <span className="px-2.5 py-0.5 text-xs font-semibold rounded-full bg-[#176B83] text-white">
                     {savedBenefitIds.length}
                   </span>
                 )}
@@ -146,7 +146,7 @@ export const Header: React.FC = () => {
             <Link
               to="/upload"
               onClick={() => setMobileMenuOpen(false)}
-              className="mt-2 w-full text-center py-3.5 bg-[#6A5AE0] text-white font-medium rounded-full"
+              className="mt-2 w-full text-center py-3.5 bg-[#176B83] text-white font-medium rounded-full"
             >
               Find My Benefits
             </Link>

@@ -35,7 +35,7 @@ export default function App() {
     <AppProvider>
       <BrowserRouter>
         <ScrollToTop />
-        <div className="min-h-screen flex flex-col bg-[#F5F5F7] text-[#16151D] antialiased">
+        <div className="min-h-screen flex flex-col bg-[#FCFCFA] text-[#233640] antialiased">
           <Header />
           <div className="flex-1">
             <Routes>

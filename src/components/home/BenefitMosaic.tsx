@@ -32,18 +32,18 @@ const TileCard: React.FC<{ tile: Tile }> = ({ tile }) => {
     <Link
       to="/benefits"
       className={`group flex flex-col items-center justify-center gap-3 rounded-3xl p-6 text-center transition-all hover:-translate-y-0.5 ${
-        tile.tone === 'lavender' ? 'bg-[#F1EEFE]' : 'bg-[#EAF7F6]'
+        tile.tone === 'lavender' ? 'bg-[#EAF5F7]' : 'bg-[#EAF7F6]'
       } ${tile.featured ? 'min-h-[260px] sm:min-h-full' : 'min-h-[150px]'}`}
     >
       <Icon
-        className={`${tile.featured ? 'w-14 h-14' : 'w-7 h-7'} text-[#16151D] transition-transform group-hover:scale-110`}
+        className={`${tile.featured ? 'w-14 h-14' : 'w-7 h-7'} text-[#233640] transition-transform group-hover:scale-110`}
         strokeWidth={1.4}
         aria-hidden="true"
       />
-      <span className={`${tile.featured ? 'text-lg font-medium text-[#16151D]' : 'text-sm text-[#5E5D6B]'}`}>
+      <span className={`${tile.featured ? 'text-lg font-medium text-[#233640]' : 'text-sm text-[#63747D]'}`}>
         {tile.label}
       </span>
-      <span className={`text-xs font-medium ${tile.featured ? 'text-[#5243C9]' : 'text-[#16151D]'}`}>{tile.amount}</span>
+      <span className={`text-xs font-medium ${tile.featured ? 'text-[#12566C]' : 'text-[#233640]'}`}>{tile.amount}</span>
     </Link>
   );
 };
@@ -55,13 +55,13 @@ export const BenefitMosaic: React.FC = () => {
         <div className="flex flex-col items-center gap-5 text-center">
           <h2
             id="mosaic-heading"
-            className="text-3xl sm:text-5xl font-normal tracking-tight leading-tight text-[#16151D] text-balance max-w-2xl"
+            className="text-3xl sm:text-5xl font-normal tracking-tight leading-tight text-[#233640] text-balance max-w-2xl"
           >
             Explore the extras hiding in your plan
           </h2>
           <Link
             to="/benefits"
-            className="inline-flex items-center h-10 px-5 rounded-full border border-[#16151D]/15 text-sm text-[#16151D] hover:bg-[#16151D] hover:text-white transition-colors"
+            className="inline-flex items-center h-10 px-5 rounded-full border border-[#233640]/15 text-sm text-[#233640] hover:bg-[#233640] hover:text-white transition-colors"
           >
             Explore benefits
           </Link>
@@ -82,8 +82,8 @@ export const BenefitMosaic: React.FC = () => {
           ))}
         </div>
 
-        <p className="flex items-start gap-3 max-w-md text-sm text-[#5E5D6B] leading-relaxed">
-          <span className="h-6 w-6 shrink-0 rounded-full border border-[#16151D]/15 flex items-center justify-center">
+        <p className="flex items-start gap-3 max-w-md text-sm text-[#63747D] leading-relaxed">
+          <span className="h-6 w-6 shrink-0 rounded-full border border-[#233640]/15 flex items-center justify-center">
             <Plus className="w-3.5 h-3.5" aria-hidden="true" />
           </span>
           Representative values shown. Your exact allowances depend on your carrier, plan, and service area.

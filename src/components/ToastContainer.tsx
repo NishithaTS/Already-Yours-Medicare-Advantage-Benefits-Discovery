@@ -24,7 +24,7 @@ export const ToastContainer: React.FC = () => {
                 ? 'border-emerald-200 text-slate-800'
                 : isWarning
                 ? 'border-amber-200 text-slate-800'
-                : 'border-[#6A5AE0]/20 text-slate-800'
+                : 'border-[#176B83]/20 text-slate-800'
             }`}
           >
             {isSuccess ? (
@@ -32,21 +32,21 @@ export const ToastContainer: React.FC = () => {
             ) : isWarning ? (
               <AlertTriangle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
             ) : (
-              <Info className="w-5 h-5 text-[#6A5AE0] shrink-0 mt-0.5" />
+              <Info className="w-5 h-5 text-[#176B83] shrink-0 mt-0.5" />
             )}
 
             <div className="flex-1 space-y-0.5">
-              <p className="font-bold text-xs uppercase tracking-wider text-[#5243C9]">
+              <p className="font-bold text-xs uppercase tracking-wider text-[#12566C]">
                 {toast.title}
               </p>
               {toast.description && (
-                <p className="text-xs text-[#5E5D6B] leading-snug">{toast.description}</p>
+                <p className="text-xs text-[#63747D] leading-snug">{toast.description}</p>
               )}
             </div>
 
             <button
               onClick={() => removeToast(toast.id)}
-              className="text-[#5E5D6B] hover:text-[#16151D] p-1 rounded-md transition-colors"
+              className="text-[#63747D] hover:text-[#233640] p-1 rounded-md transition-colors"
               aria-label="Close notification"
             >
               <X className="w-4 h-4" />

@@ -102,8 +102,8 @@ export const CardUploader: React.FC<Props> = ({ onUploaded }) => {
           onDrop={handleDrop}
           className={`relative rounded-3xl border-2 border-dashed p-8 sm:p-12 text-center transition-all cursor-pointer flex flex-col items-center justify-center ${
             dragActive
-              ? 'border-[#6A5AE0] bg-[#F1EEFE]/80 scale-[1.01]'
-              : 'border-[#16151D]/20 hover:border-[#6A5AE0] bg-white hover:bg-[#F1EEFE]/30'
+              ? 'border-[#176B83] bg-[#EAF5F7]/80 scale-[1.01]'
+              : 'border-[#233640]/20 hover:border-[#176B83] bg-white hover:bg-[#EAF5F7]/30'
           }`}
           onClick={() => fileInputRef.current?.click()}
         >
@@ -125,14 +125,14 @@ export const CardUploader: React.FC<Props> = ({ onUploaded }) => {
             aria-label="Take Photo with Camera"
           />
 
-          <div className="h-16 w-16 rounded-2xl bg-[#F1EEFE] text-[#6A5AE0] flex items-center justify-center mb-4 shadow-sm group-hover:scale-105 transition-transform">
-            <UploadCloud className="w-8 h-8 text-[#6A5AE0]" />
+          <div className="h-16 w-16 rounded-2xl bg-[#EAF5F7] text-[#176B83] flex items-center justify-center mb-4 shadow-sm group-hover:scale-105 transition-transform">
+            <UploadCloud className="w-8 h-8 text-[#176B83]" />
           </div>
 
-          <h3 className="text-lg sm:text-xl font-bold text-[#16151D] mb-1">
+          <h3 className="text-lg sm:text-xl font-bold text-[#233640] mb-1">
             Drag and drop your insurance card here
           </h3>
-          <p className="text-sm text-[#5E5D6B] max-w-md mb-6">
+          <p className="text-sm text-[#63747D] max-w-md mb-6">
             Supports JPG, JPEG, PNG, or WEBP photos up to 10MB.
           </p>
 
@@ -140,7 +140,7 @@ export const CardUploader: React.FC<Props> = ({ onUploaded }) => {
             <button
               type="button"
               onClick={() => fileInputRef.current?.click()}
-              className="min-h-[44px] px-5 py-2.5 bg-[#6A5AE0] hover:bg-[#5243C9] active:scale-[0.98] text-white font-semibold text-sm rounded-xl shadow-sm transition-all"
+              className="min-h-[44px] px-5 py-2.5 bg-[#176B83] hover:bg-[#12566C] active:scale-[0.98] text-white font-semibold text-sm rounded-xl shadow-sm transition-all"
             >
               Browse Files
             </button>
@@ -148,14 +148,14 @@ export const CardUploader: React.FC<Props> = ({ onUploaded }) => {
             <button
               type="button"
               onClick={() => cameraInputRef.current?.click()}
-              className="min-h-[44px] px-5 py-2.5 bg-white border border-[#16151D]/20 hover:bg-[#F1EEFE] text-[#16151D] font-semibold text-sm rounded-xl transition-all flex items-center gap-2"
+              className="min-h-[44px] px-5 py-2.5 bg-white border border-[#233640]/20 hover:bg-[#EAF5F7] text-[#233640] font-semibold text-sm rounded-xl transition-all flex items-center gap-2"
             >
-              <Camera className="w-4 h-4 text-[#6A5AE0]" />
+              <Camera className="w-4 h-4 text-[#176B83]" />
               <span>Use Camera</span>
             </button>
           </div>
 
-          <div className="mt-8 flex items-center gap-2 text-xs text-[#5E5D6B]">
+          <div className="mt-8 flex items-center gap-2 text-xs text-[#63747D]">
             <ShieldCheck className="w-4 h-4 text-emerald-600" />
             <span>Processed entirely inside your browser. No image is sent to an external server.</span>
           </div>
@@ -163,13 +163,13 @@ export const CardUploader: React.FC<Props> = ({ onUploaded }) => {
       ) : (
         /* Preview with Replace / Remove controls */
         <div className="space-y-6">
-          <div className="p-6 rounded-3xl bg-white border border-[#16151D]/15 shadow-sm space-y-4">
-            <div className="flex items-center justify-between pb-3 border-b border-[#16151D]/10">
-              <div className="flex items-center gap-2 text-sm font-bold text-[#5243C9]">
+          <div className="p-6 rounded-3xl bg-white border border-[#233640]/15 shadow-sm space-y-4">
+            <div className="flex items-center justify-between pb-3 border-b border-[#233640]/10">
+              <div className="flex items-center gap-2 text-sm font-bold text-[#12566C]">
                 <CheckCircle className="w-4 h-4 text-emerald-600" />
                 <span>Card Photo Ready for Review</span>
               </div>
-              <span className="text-xs text-[#5E5D6B] font-mono truncate max-w-[200px]">
+              <span className="text-xs text-[#63747D] font-mono truncate max-w-[200px]">
                 {fileName}
               </span>
             </div>
@@ -183,9 +183,9 @@ export const CardUploader: React.FC<Props> = ({ onUploaded }) => {
                 <button
                   type="button"
                   onClick={() => fileInputRef.current?.click()}
-                  className="px-4 py-2 text-xs font-semibold rounded-lg bg-white border border-[#16151D]/20 text-[#16151D] hover:bg-[#F1EEFE] transition-colors flex items-center gap-1.5"
+                  className="px-4 py-2 text-xs font-semibold rounded-lg bg-white border border-[#233640]/20 text-[#233640] hover:bg-[#EAF5F7] transition-colors flex items-center gap-1.5"
                 >
-                  <RefreshCw className="w-3.5 h-3.5 text-[#6A5AE0]" />
+                  <RefreshCw className="w-3.5 h-3.5 text-[#176B83]" />
                   <span>Replace Photo</span>
                 </button>
 
@@ -204,7 +204,7 @@ export const CardUploader: React.FC<Props> = ({ onUploaded }) => {
                 onClick={() => {
                   if (onUploaded) onUploaded();
                 }}
-                className="min-h-[44px] px-6 py-2.5 bg-[#6A5AE0] hover:bg-[#5243C9] active:scale-[0.98] text-white font-bold text-sm rounded-xl shadow-md transition-all flex items-center gap-2"
+                className="min-h-[44px] px-6 py-2.5 bg-[#176B83] hover:bg-[#12566C] active:scale-[0.98] text-white font-bold text-sm rounded-xl shadow-md transition-all flex items-center gap-2"
               >
                 <span>Continue to Simulated Review</span>
                 <ArrowRight className="w-4 h-4" />

@@ -12,10 +12,10 @@ export const StepsShowcase: React.FC = () => {
     <section aria-labelledby="steps-heading" className="px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto flex flex-col gap-10">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
-          <h2 id="steps-heading" className="text-3xl sm:text-5xl font-normal tracking-tight text-[#16151D]">
+          <h2 id="steps-heading" className="text-3xl sm:text-5xl font-normal tracking-tight text-[#233640]">
             Three simple steps
           </h2>
-          <p className="text-sm text-[#5E5D6B] leading-relaxed max-w-sm">
+          <p className="text-sm text-[#63747D] leading-relaxed max-w-sm">
             Designed for clear reading on phones, tablets, and computers, with large text and caregiver tips built in.
           </p>
         </div>
@@ -29,7 +29,7 @@ export const StepsShowcase: React.FC = () => {
             />
             <Link
               to="/help"
-              className="absolute left-4 bottom-4 inline-flex items-center gap-2 h-9 px-4 rounded-full bg-white/90 backdrop-blur text-xs font-medium text-[#16151D] hover:bg-white transition-colors"
+              className="absolute left-4 bottom-4 inline-flex items-center gap-2 h-9 px-4 rounded-full bg-white/90 backdrop-blur text-xs font-medium text-[#233640] hover:bg-white transition-colors"
             >
               Read the caregiver guide
               <ArrowUpRight className="w-3.5 h-3.5" aria-hidden="true" />
@@ -39,14 +39,14 @@ export const StepsShowcase: React.FC = () => {
           <div className="lg:col-span-7 flex flex-col gap-4">
             <Link
               to="/upload"
-              className="group flex-1 flex flex-col justify-between gap-8 rounded-3xl bg-[#6A5AE0] hover:bg-[#5243C9] p-6 sm:p-8 text-white transition-colors"
+              className="group flex-1 flex flex-col justify-between gap-8 rounded-3xl bg-[#176B83] hover:bg-[#12566C] p-6 sm:p-8 text-white transition-colors"
             >
               <div className="flex items-start justify-between gap-4">
                 <div className="flex flex-col gap-2">
                   <span className="text-xs text-white/80 uppercase tracking-wider">Step 01</span>
                   <span className="text-2xl sm:text-3xl font-normal tracking-tight">Snap or select your card</span>
                 </div>
-                <span className="h-11 w-11 shrink-0 rounded-full bg-white text-[#16151D] flex items-center justify-center transition-transform group-hover:rotate-45">
+                <span className="h-11 w-11 shrink-0 rounded-full bg-white text-[#233640] flex items-center justify-center transition-transform group-hover:rotate-45">
                   <ArrowUpRight className="w-5 h-5" aria-hidden="true" />
                 </span>
               </div>
@@ -59,14 +59,14 @@ export const StepsShowcase: React.FC = () => {
               <Link
                 key={step.title}
                 to={step.to}
-                className="group flex items-center justify-between gap-4 rounded-2xl bg-white border border-[#16151D]/5 px-6 py-5 hover:border-[#6A5AE0]/40 transition-colors"
+                className="group flex items-center justify-between gap-4 rounded-2xl bg-white border border-[#233640]/5 px-6 py-5 hover:border-[#176B83]/40 transition-colors"
               >
                 <span className="flex items-center gap-4">
-                  <span className="text-xs text-[#5E5D6B] tabular-nums">{`0${index + 2}`}</span>
-                  <span className="text-base text-[#16151D]">{step.title}</span>
+                  <span className="text-xs text-[#63747D] tabular-nums">{`0${index + 2}`}</span>
+                  <span className="text-base text-[#233640]">{step.title}</span>
                 </span>
                 <ArrowDownRight
-                  className="w-5 h-5 text-[#16151D] transition-transform group-hover:-rotate-90"
+                  className="w-5 h-5 text-[#233640] transition-transform group-hover:-rotate-90"
                   aria-hidden="true"
                 />
               </Link>

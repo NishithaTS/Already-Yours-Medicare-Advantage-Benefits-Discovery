@@ -15,13 +15,13 @@ export const HeroSection: React.FC = () => {
           />
           <div
             aria-hidden="true"
-            className="absolute inset-0 bg-gradient-to-r from-[#16151D]/80 via-[#16151D]/45 to-transparent"
+            className="absolute inset-0 bg-gradient-to-r from-[#233640]/80 via-[#233640]/45 to-transparent"
           />
 
           <div className="relative z-10 flex flex-col justify-between gap-10 w-full p-6 sm:p-10 lg:p-14">
             <div className="flex flex-col gap-6 max-w-xl pt-6 lg:pt-12">
-              <span className="self-start inline-flex items-center gap-1.5 h-7 px-3 rounded-full bg-white text-[#5243C9] text-xs font-medium">
-                <Star className="w-3 h-3 fill-[#6A5AE0] text-[#6A5AE0]" aria-hidden="true" />
+              <span className="self-start inline-flex items-center gap-1.5 h-7 px-3 rounded-full bg-white text-[#12566C] text-xs font-medium">
+                <Star className="w-3 h-3 fill-[#176B83] text-[#176B83]" aria-hidden="true" />
                 Free · No SSN or insurer login
               </span>
 
@@ -39,18 +39,18 @@ export const HeroSection: React.FC = () => {
               <div className="flex flex-wrap items-center gap-3">
                 <Link
                   to="/upload"
-                  className="inline-flex items-center gap-2.5 h-12 pl-1.5 pr-5 rounded-full bg-[#16151D] hover:bg-black text-white text-sm font-medium transition-colors"
+                  className="inline-flex items-center gap-2.5 h-12 pl-1.5 pr-5 rounded-full bg-[#233640] hover:bg-black text-white text-sm font-medium transition-colors"
                 >
-                  <span className="h-9 w-9 rounded-full bg-white text-[#16151D] flex items-center justify-center">
+                  <span className="h-9 w-9 rounded-full bg-white text-[#233640] flex items-center justify-center">
                     <Search className="w-4 h-4" />
                   </span>
                   Find My Benefits
                 </Link>
                 <Link
                   to="/upload"
-                  className="inline-flex items-center gap-2.5 h-12 pl-1.5 pr-5 rounded-full bg-white hover:bg-[#F1EEFE] text-[#16151D] text-sm font-medium transition-colors"
+                  className="inline-flex items-center gap-2.5 h-12 pl-1.5 pr-5 rounded-full bg-white hover:bg-[#EAF5F7] text-[#233640] text-sm font-medium transition-colors"
                 >
-                  <span className="h-9 w-9 rounded-full bg-[#16151D] text-white flex items-center justify-center">
+                  <span className="h-9 w-9 rounded-full bg-[#233640] text-white flex items-center justify-center">
                     <CreditCard className="w-4 h-4" />
                   </span>
                   Try a sample card
@@ -63,7 +63,7 @@ export const HeroSection: React.FC = () => {
               className="self-start flex items-center gap-3 p-3 pr-4 rounded-2xl bg-white/85 backdrop-blur-md hover:bg-white transition-colors"
             >
               <AvatarStack />
-              <span className="text-xs leading-snug text-[#16151D] max-w-[150px]">
+              <span className="text-xs leading-snug text-[#233640] max-w-[150px]">
                 Built for older adults and family caregivers
               </span>
               <span className="h-7 w-7 rounded-full bg-white flex items-center justify-center shadow-sm">
@@ -78,13 +78,13 @@ export const HeroSection: React.FC = () => {
           >
             <div className="flex items-center justify-between">
               <span className="text-xs text-white/85">Allowance insight</span>
-              <span className="inline-flex items-center gap-0.5 h-6 px-2 rounded-full bg-white text-[#16151D] text-[11px] font-medium">
+              <span className="inline-flex items-center gap-0.5 h-6 px-2 rounded-full bg-white text-[#233640] text-[11px] font-medium">
                 <ArrowUpRight className="w-3 h-3" aria-hidden="true" />
                 Resets Jan 1
               </span>
             </div>
             <div className="flex items-center gap-2.5">
-              <span className="h-9 w-9 rounded-full bg-white text-[#6A5AE0] flex items-center justify-center">
+              <span className="h-9 w-9 rounded-full bg-white text-[#176B83] flex items-center justify-center">
                 <Smile className="w-4 h-4" aria-hidden="true" />
               </span>
               <div className="flex flex-col">
@@ -98,7 +98,7 @@ export const HeroSection: React.FC = () => {
                 <span>20%</span>
               </div>
               <div className="h-2 rounded-full bg-white/30 overflow-hidden">
-                <div className="h-full w-1/5 rounded-full bg-[#6A5AE0]" />
+                <div className="h-full w-1/5 rounded-full bg-[#176B83]" />
               </div>
             </div>
             <p className="flex items-baseline gap-1.5">
@@ -109,7 +109,7 @@ export const HeroSection: React.FC = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-5 px-2">
-          <p className="text-sm text-[#5E5D6B] max-w-xs">
+          <p className="text-sm text-[#63747D] max-w-xs">
             Plain-English guidance and step-by-step checklists for every allowance.
           </p>
           <ul className="flex items-center gap-2" aria-label="Benefit categories covered">
@@ -120,13 +120,13 @@ export const HeroSection: React.FC = () => {
             ].map(({ icon: Icon, label }) => (
               <li
                 key={label}
-                className="inline-flex items-center gap-1.5 h-9 px-3.5 rounded-full bg-white border border-[#16151D]/5 text-sm text-[#16151D]"
+                className="inline-flex items-center gap-1.5 h-9 px-3.5 rounded-full bg-white border border-[#233640]/5 text-sm text-[#233640]"
               >
-                <Icon className="w-4 h-4 text-[#6A5AE0]" aria-hidden="true" />
+                <Icon className="w-4 h-4 text-[#176B83]" aria-hidden="true" />
                 {label}
               </li>
             ))}
-            <li className="hidden sm:inline-flex items-center h-9 px-3.5 rounded-full bg-[#F1EEFE] text-sm text-[#5243C9]">
+            <li className="hidden sm:inline-flex items-center h-9 px-3.5 rounded-full bg-[#EAF5F7] text-sm text-[#12566C]">
               +5 more
             </li>
           </ul>

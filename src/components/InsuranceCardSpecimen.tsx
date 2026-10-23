@@ -72,7 +72,7 @@ export const InsuranceCardSpecimen: React.FC<Props> = ({
           <div className="flex items-start justify-between gap-2 border-b border-white/15 pb-2.5">
             <div>
               <div className="flex items-center gap-1.5">
-                <Shield className="w-4 h-4 text-[#7BD4E2]" />
+                <Shield className="w-4 h-4 text-[#C9C1FF]" />
                 <span className="font-bold text-sm sm:text-base tracking-wide text-white uppercase">
                   {card.carrier}
                 </span>
@@ -94,7 +94,7 @@ export const InsuranceCardSpecimen: React.FC<Props> = ({
 
           {/* Member Info Middle */}
           <div className="my-auto py-2">
-            <div className="text-[10px] uppercase tracking-wider text-[#7BD4E2] font-semibold">
+            <div className="text-[10px] uppercase tracking-wider text-[#C9C1FF] font-semibold">
               Member Name
             </div>
             <div className="text-sm sm:text-base font-bold tracking-wider text-white">

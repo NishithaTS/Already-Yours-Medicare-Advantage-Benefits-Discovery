@@ -125,7 +125,7 @@ export const HowItWorksPage: React.FC = () => {
         {/* Why Benefits Expire Unused */}
         <section className="rounded-3xl bg-[#12566C] text-white p-8 sm:p-12 space-y-6">
           <div className="space-y-2">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#7BD4E2]">
+            <span className="text-xs font-bold uppercase tracking-wider text-[#C9C1FF]">
               The Healthcare Blindspot
             </span>
             <h2 className="text-2xl sm:text-3xl font-bold leading-tight">

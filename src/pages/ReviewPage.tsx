@@ -60,9 +60,9 @@ export const ReviewPage: React.FC = () => {
 
             {isScanning && (
               <div className="absolute inset-0 bg-[#12566C]/20 backdrop-blur-[1px] flex flex-col items-center justify-center text-white">
-                <div className="h-1 bg-[#7BD4E2] w-full absolute top-0 animate-bounce" />
+                <div className="h-1 bg-[#C9C1FF] w-full absolute top-0 animate-bounce" />
                 <div className="p-4 rounded-2xl bg-[#233640]/90 backdrop-blur-md flex items-center gap-3 shadow-lg">
-                  <Loader2 className="w-5 h-5 text-[#7BD4E2] animate-spin" />
+                  <Loader2 className="w-5 h-5 text-[#C9C1FF] animate-spin" />
                   <span className="text-sm font-semibold tracking-wide">Reviewing your card…</span>
                 </div>
               </div>

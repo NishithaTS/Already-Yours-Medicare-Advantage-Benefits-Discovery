@@ -9,7 +9,7 @@ const AVATARS = [
 export const AvatarStack: React.FC<{ size?: 'sm' | 'md' }> = ({ size = 'sm' }) => {
   const dimension = size === 'md' ? 'h-11 w-11' : 'h-8 w-8';
   return (
-    <div className="flex -space-x-2.5" aria-hidden="true">
+    <div className="flex shrink-0 -space-x-2.5" aria-hidden="true">
       {AVATARS.map((avatar) => (
         <img
           key={avatar.src}
